@@ -35,21 +35,52 @@ window.addEventListener('scroll', () => {
         }
 });
 
+async function fetchGitHubStats() {
+        try {
+                const repoResponse = await fetch('https://api.github.com/repos/shyybi/HollowOs');
+                const repoData = await repoResponse.json();
+                
+                const languagesResponse = await fetch('https://api.github.com/repos/shyybi/HollowOs/languages');
+                const languagesData = await languagesResponse.json();
+                
+                const totalBytes = Object.values(languagesData).reduce((sum, bytes) => sum + bytes, 0);
+                
+                const shellPercentage = Math.round((languagesData.Shell || 0) / totalBytes * 100);
+                const assemblyPercentage = Math.round((languagesData.Assembly || 0) / totalBytes * 100);
+                const cPercentage = Math.round((languagesData.C || 0) / totalBytes * 100);
+                
+                const stats = document.querySelectorAll('.stat-number');
+                stats[0].setAttribute('data-target', shellPercentage);
+                stats[1].setAttribute('data-target', assemblyPercentage);
+                stats[2].setAttribute('data-target', cPercentage);
+                stats[3].setAttribute('data-target', repoData.stargazers_count);
+                
+        } catch (error) {
+                console.error('Error fetching GitHub stats:', error);
+        }
+}
+
 function animateCounters() {
         const counters = document.querySelectorAll('.stat-number');
+        let animating = false;
         
         counters.forEach(counter => {
                 const target = parseInt(counter.getAttribute('data-target'));
                 const current = parseInt(counter.textContent);
                 
                 if (current < target) {
-                        const increment = target / 50;
-                        const newValue = Math.ceil(current + increment);
-                        counter.textContent = Math.min(newValue, target);
-                        
-                        setTimeout(() => animateCounters(), 50);
+                        animating = true;
+                        const increment = Math.max(1, target / 50);
+                        const newValue = Math.min(current + Math.ceil(increment), target);
+                        counter.textContent = newValue;
                 }
         });
+        
+        if (animating) {
+                requestAnimationFrame(() => {
+                        setTimeout(animateCounters, 50);
+                });
+        }
 }
 
 const observerOptions = {
@@ -63,8 +94,11 @@ const observer = new IntersectionObserver((entries) => {
                         entry.target.style.opacity = '1';
                         entry.target.style.transform = 'translateY(0)';
                         
-                        if (entry.target.classList.contains('stats')) {
-                                setTimeout(animateCounters, 500);
+                        if (entry.target.classList.contains('stats') && !entry.target.dataset.animated) {
+                                entry.target.dataset.animated = 'true';
+                                fetchGitHubStats().then(() => {
+                                        setTimeout(animateCounters, 500);
+                                });
                         }
                 }
         });
