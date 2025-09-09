@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HollowOs - Minimal Operating System</title>
+    <link rel="icon" type="image/png" href="HollowIMG.png">
+    <link rel="apple-touch-icon" href="HollowIMG.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="HollowIMG.png" alt="HollowOs" class="logo-img">
+                <span class="logo-text">HollowOs</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#features" class="nav-link">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#download" class="nav-link">Download</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="gradient-text">HollowOs</span>
+                </h1>
+                <p class="hero-subtitle">A minimal operating system inspired by courage and determination</p>
+                <p class="hero-description">
+                    Hollow like a famous Knight, minimal like its creator. 
+                    A personal journey towards creating a unique OS.
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://github.com/shyybi/HollowOs" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-github"></i>
+                        View on GitHub
+                    </a>
+                    <a href="#about" class="btn btn-secondary">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="HollowIMG.png" alt="HollowOs Logo" class="floating-image">
+                <div class="image-glow"></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About HollowOs</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-card">
+                        <h3>A Personal Quest</h3>
+                        <p>
+                            HollowOs isn't just a technical project - it's a personal journey. 
+                            Born from the need to prove that it's possible to create something new and great, 
+                            this operating system represents my own "Path of Pain".
+                        </p>
+                    </div>
+                    <div class="about-card">
+                        <h3>Minimalist Philosophy</h3>
+                        <p>
+                            Inspired by the universe of Hollow Knight, HollowOs embraces the philosophy of minimalism. 
+                            Every line of code has its purpose, every feature is designed for the essential.
+                        </p>
+                    </div>
+                    <div class="about-card">
+                        <h3>Continuous Learning</h3>
+                        <p>
+                            This project is a learning adventure in operating system development, 
+                            from low-level programming to system architecture.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section features">
+        <div class="container">
+            <h2 class="section-title">Technical Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Minimal Kernel</h3>
+                    <p>An optimized kernel for performance and simplicity, written primarily in C and Assembly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-memory"></i>
+                    </div>
+                    <h3>Memory Management</h3>
+                    <p>Efficient memory management system with dynamic allocation and process protection.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <h3>Shell Interface</h3>
+                    <p>Interactive shell with support for basic commands and custom scripts.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-code"></i>
+                    </div>
+                    <h3>File System</h3>
+                    <p>Implementation of a simple and efficient file system for data management.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Modular</h3>
+                    <p>Modular architecture allowing easy addition of new features.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security</h3>
+                    <p>Built-in security mechanisms to protect the system and user data.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="71">0</div>
+                    <div class="stat-label">% Shell</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-label">% Assembly</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="9">0</div>
+                    <div class="stat-label">% C</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="6">0</div>
+                    <div class="stat-label">⭐ GitHub</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="section download">
+        <div class="container">
+            <h2 class="section-title">Get Started with HollowOs</h2>
+            <div class="download-content">
+                <div class="download-info">
+                    <h3>Installation and Documentation</h3>
+                    <p>
+                        HollowOs is currently under active development. 
+                        Check out the installation guides and documentation to get started.
+                    </p>
+                    <div class="download-links">
+                        <a href="https://github.com/shyybi/HollowOs/blob/main/docs/INSTALL.md" class="btn btn-primary" target="_blank">
+                            <i class="fas fa-download"></i>
+                            Installation Guide
+                        </a>
+                        <a href="https://github.com/shyybi/HollowOs/blob/main/docs/CONTRIBUTING.md" class="btn btn-secondary" target="_blank">
+                            <i class="fas fa-users"></i>
+                            Contribute
+                        </a>
+                    </div>
+                </div>
+                <div class="download-requirements">
+                    <h4>System Requirements</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> x86_64 Architecture</li>
+                        <li><i class="fas fa-check"></i> At least 2GB RAM</li>
+                        <li><i class="fas fa-check"></i> Virtual machine or test PC</li>
+                        <li><i class="fas fa-check"></i> C/Assembly development environment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Join the Community</h2>
+            <div class="contact-content">
+                <div class="contact-text">
+                    <p>
+                        HollowOs is an open source project that grows thanks to its community. 
+                        Whether you're a developer, tester, or just curious, your contribution is valuable.
+                    </p>
+                    <p>
+                        For any discussions or issues, please write in English. Thank you.
+                    </p>
+                </div>
+                <div class="contact-links">
+                    <a href="https://github.com/shyybi/HollowOs" class="contact-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub Repository</span>
+                    </a>
+                    <a href="https://github.com/shyybi/HollowOs/issues" class="contact-link" target="_blank">
+                        <i class="fas fa-bug"></i>
+                        <span>Report a Bug</span>
+                    </a>
+                    <a href="https://github.com/shyybi/HollowOs/discussions" class="contact-link" target="_blank">
+                        <i class="fas fa-comments"></i>
+                        <span>Discussions</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="HollowIMG.png" alt="HollowOs" class="footer-logo-img">
+                        <span>HollowOs</span>
+                    </div>
+                    <p>A minimal operating system born from passion and determination.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#download">Download</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Development</h4>
+                    <ul>
+                        <li><a href="https://github.com/shyybi/HollowOs" target="_blank">Source Code</a></li>
+                        <li><a href="https://github.com/shyybi/HollowOs/blob/main/docs/CONTRIBUTING.md" target="_blank">Contribute</a></li>
+                        <li><a href="https://github.com/shyybi/HollowOs/issues" target="_blank">Issues</a></li>
+                        <li><a href="https://github.com/shyybi/HollowOs/releases" target="_blank">Releases</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 HollowOs. Open source project created with ❤️ by <a href="https://github.com/shyybi" target="_blank">shyybi</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
