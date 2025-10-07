@@ -37,10 +37,10 @@ window.addEventListener('scroll', () => {
 
 async function fetchGitHubStats() {
         try {
-                const repoResponse = await fetch('https://api.github.com/repos/shyybi/HollowOs');
+                const repoResponse = await fetch('https://api.github.com/repos/Auri-OS/AuriOS');
                 const repoData = await repoResponse.json();
                 
-                const languagesResponse = await fetch('https://api.github.com/repos/shyybi/HollowOs/languages');
+                const languagesResponse = await fetch('https://api.github.com/repos/Auri-OS/AuriOS/languages');
                 const languagesData = await languagesResponse.json();
                 
                 const totalBytes = Object.values(languagesData).reduce((sum, bytes) => sum + bytes, 0);
@@ -255,7 +255,7 @@ document.addEventListener('keydown', (e) => {
                         top: 50%;
                         left: 50%;
                         transform: translate(-50%, -50%);
-                        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                        background: linear-gradient(135deg, #3F5EFB 0%, #5619B3 100%);
                         color: white;
                         padding: 1rem 2rem;
                         border-radius: 10px;

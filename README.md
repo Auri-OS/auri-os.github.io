@@ -1,2 +1,2 @@
-# hollowos.github.io
-HollowOs website
+# Auri-OS.org
+AuriOS website

@@ -59,7 +59,7 @@ body {
     font-size: 1.5rem;
     font-weight: 700;
     color: #fff;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: radial-gradient(circle at 30% 30%, #3F5EFB, #5619B3 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -80,7 +80,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #667eea;
+    color: #3F5EFB;
 }
 
 .nav-link::after {
@@ -90,7 +90,7 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #3F5EFB 0%, #5619B3 100%);
     transition: width 0.3s ease;
 }
 
@@ -115,7 +115,8 @@ body {
 /* Hero Section */
 .hero {
     min-height: 100vh;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: radial-gradient(circle at 30% 30%, #3F5EFB, #5619B3 70%);
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -313,7 +314,7 @@ body {
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #3F5EFB 0%, #5619B3 100%);
     border-radius: 2px;
 }
 
@@ -341,7 +342,7 @@ body {
 }
 
 .about-card h3 {
-    color: #667eea;
+    color: #3F5EFB;
     margin-bottom: 1rem;
     font-size: 1.3rem;
 }
@@ -372,7 +373,7 @@ body {
 .feature-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #3F5EFB 0%, #5619B3 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -395,7 +396,7 @@ body {
 
 /* Stats Section */
 .stats {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: radial-gradient(circle at 30% 30%, #3F5EFB, #5619B3 70%);
     color: #fff;
 }
 
@@ -453,7 +454,7 @@ body {
 }
 
 .download-links .btn {
-    background: #667eea;
+    background: #3F5EFB;
     color: #fff;
     border: none;
 }
@@ -465,12 +466,12 @@ body {
 
 .download-links .btn-secondary {
     background: transparent;
-    color: #667eea;
-    border: 2px solid #667eea;
+    color: #3F5EFB;
+    border: 2px solid #3F5EFB;
 }
 
 .download-links .btn-secondary:hover {
-    background: #667eea;
+    background: #3F5EFB;
     color: #fff;
 }
 
@@ -547,7 +548,7 @@ body {
 .contact-link:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    color: #667eea;
+    color: #3F5EFB;
 }
 
 .contact-link i {
@@ -584,7 +585,7 @@ body {
 .footer-logo span {
     font-size: 1.2rem;
     font-weight: 600;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #3F5EFB 0%, #5619B3 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -592,7 +593,7 @@ body {
 
 .footer-section h4 {
     margin-bottom: 1rem;
-    color: #667eea;
+    color: #3F5EFB;
 }
 
 .footer-section ul {
@@ -610,7 +611,7 @@ body {
 }
 
 .footer-section ul li a:hover {
-    color: #667eea;
+    color: #3F5EFB;
 }
 
 .footer-section p {
@@ -626,7 +627,7 @@ body {
 }
 
 .footer-bottom a {
-    color: #667eea;
+    color: #3F5EFB;
     text-decoration: none;
 }
 
