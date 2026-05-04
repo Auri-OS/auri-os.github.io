@@ -530,7 +530,7 @@ body {
 }
 
 .download-requirements li i {
-    color: var(--accent-primary)
+    color: var(--accent-primary);
     align-items: center;
     gap: 0.5rem;
 }
